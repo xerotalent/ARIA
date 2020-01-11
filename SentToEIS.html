@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Welome to ARIA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap" rel="stylesheet">
+    <!--===============================================================================================-->
+</head>
+
+<body>
+
+    <!-- Top Nav Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://cihr-irsc.gc.ca/images/leaf-cihr-colour-portrait-en.jpg" height="60px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Step1.html">
+                        Home
+                        <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.researchnet-recherchenet.ca/" target="_blank">ResearchNet</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+
+                <span style="font-size: 36pt; font-family: 'Bungee Hairline', cursive;">ARIA*&nbsp;&nbsp;</span>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user"></i> My Profile
+                        </a>
+                        <div class="dropdown-menu" style="right: 0 !important; left: auto !important;" aria-labelledby="navbarDropdown">
+                            <div class="card dropdown-item" style="width: 18rem;">
+                                <img class="card-img-top rounded-circle img-fluid" src="https://pbs.twimg.com/profile_images/378800000405120336/141fe6e51419730d9288e88ca79cb43d_400x400.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chris Gamberg</h5>
+                                    <p class="card-text">Solution Architect
+                                        <br/>Digital Services and Security
+                                    </p>
+
+                                </div>
+                                <ul class="list-group list-group-flush">
+
+                                    <li class="list-group-item">
+                                        <a href="#" class="card-link"><i class="fa fa-pie-chart"></i> Audit Reports</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="card-link"><i class="fa fa-language"></i> Fran&ccedil;ais</a>
+                                    </li>
+                                    <li class="list-group-item"><a href="index.html" class="card-link"><i class="fa fa-sign-out"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </nav>
+
+
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+
+
+        <!-- JUMBOTRON-->
+        <div class="jumbotron" style="padding: 2rem 2rem !important; background-color: white;">
+            <h1 class="display-4">Other - Travel Awards: 2019 - Summer</h1>
+            <br />
+            <div class="text-center">
+                <h2 class="text-success"><i class="fa fa-check-circle"></i> Pre-Scores and Pre-Ranking sent to EIS!</h2>
+
+                <img src="https://digitalsynopsis.com/wp-content/uploads/2015/10/gif-icons-menu-transition-animations-shake-new-mail.gif">
+                <p class="lead">
+                    Transaction ID: 3937249
+                </p>
+                <hr />
+                <p>
+                    <a class="btn btn-info float-right" href="Step1.html" role="button"><i class="fa fa-refresh"></i> Choose Another Competition</a>
+                </p>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <br /><br /><br /><br />
+
+        <!-- Modal -->
+        <div class="modal fade alert" role="alert" id="modalConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header alert-warning">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="fa fa-exclamation-circle" style="font-size: 18pt;"></i> Warning - Are You Sure?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <p><u>WARNING:</u>ul> Sending the pre-scores to EIS cannot be undone!</p>
+                        <p>
+                            Are you sure you wish to continue?
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>&nbsp;
+                        <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fa fa-upload"></i> Send Pre-Scores To EIS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Main Content -->
+
+        <!--===============================================================================================-->
+        <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="vendor/bootstrap/js/popper.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="vendor/select2/select2.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="vendor/tilt/tilt.jquery.min.js"></script>
+        <script>
+            $('.js-tilt').tilt({
+                scale: 1.1
+            })
+        </script>
+        <!--===============================================================================================-->
+        <script src="js/main.js"></script>
+
+</body>
+
+</html>

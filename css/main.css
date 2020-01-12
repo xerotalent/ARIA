@@ -52,6 +52,14 @@ html {
     line-height: 1.1;
 }
 
+.hidden {
+    display: none!important;
+}
+
+.show {
+    display: inline!important;
+}
+
 
 /*---------------------------------------------*/
 

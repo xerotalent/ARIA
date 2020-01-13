@@ -101,9 +101,6 @@
                 Other - Travel Awards: 2019 - Summer
             </h1>
 
-            <a class="btn btn-info float-right" href="https://www.researchnet-recherchenet.ca/rnr16/vwOpprtntyDtls.do?prog=3139&view=browseArchive&browseArc=true&progType=CIHR-13&type=EXACT&resultCount=25&sort=program&next=1&all=1" target="_blank" role="button"><i class="fa fa-external-link"></i> View Funding Details</a>
-
-
             <h2 class="text-warning"><i class="fa fa-exclamation-circle"></i> Prepare Competition for Pre-Ranking
             </h2>
 
@@ -124,7 +121,7 @@
                         <div class="card-body panel-body">
                             <p>
                                 <!-- Program Details Table -->
-                                <table class="table table-striped table-sm">
+                                <table class="table table-responsive table-striped table-sm">
                                     <tr>
                                         <Td width="20%"><b>Funding Organization:</b></Td>
                                         <td width="30%">
@@ -165,8 +162,9 @@
                                             &nbsp; 52
                                         </td>
                                     </tr>
-
                                 </table>
+                                <a class="btn btn-info btn-sm float-right" href="https://www.researchnet-recherchenet.ca/rnr16/vwOpprtntyDtls.do?prog=3139&view=browseArchive&browseArc=true&progType=CIHR-13&type=EXACT&resultCount=25&sort=program&next=1&all=1" target="_blank" role="button"><i class="fa fa-external-link"></i> View Funding Details</a>
+                                <br /><br />
                             </p>
                         </div>
                     </div>
@@ -178,12 +176,12 @@
 
             <!-- CHARTS -->
             <div class="row">
-                <div class="col-6 text-center">
+                <div class="col-6 text-center d-none d-sm-none d-md-inline d-lg-inline">
                     <!-- Horizontal Bar Chart -->
                     <h4 class="display-6-heading">Provincial Distribution</h4>
                     <canvas id="horizontalBar" width="442" height="130"></canvas>
                 </div>
-                <div class="col-6 text-center">
+                <div class="col-6 text-center d-none d-sm-none d-md-inline d-lg-inline">
                     <!-- Doughnut Chart-->
                     <h4 class="display-6-heading">Institute Distribution</h4>
                     <canvas id="doughnutChart" width="447" height="130"></canvas>
@@ -199,7 +197,7 @@
 
 
         <div class="row">
-            <div class="col-2">
+            <div class="col-md-2 col-lg-2 col-sm-12">
 
                 <!-- Instructions Panel -->
                 <h2>Step 2</h2>
@@ -209,15 +207,15 @@
                 </p>
 
                 <p class="text-center">
-                    <a class="btn btn-secondary btn-sm" style="color: white!important;" href="Step1.html">
+                    <a class="btn btn-secondary btn-sm btn-block" style="color: white!important;" href="Step1.html">
                         <i class="fa fa-undo"></i> Start Again</a>
                 </p>
             </div>
 
-            <div class="col-10">
+            <div class="col-md-10 col-lg-10 col-sm-12">
 
                 <!-- Application List Table -->
-                <table class="table table-sm table-striped">
+                <table class="table table-responsive table-sm table-striped">
                     <thead style="background-color: white; border: white;">
                         <tr>
                             <th scope="col" style="color: #006200;">Ref. #</th>
@@ -272,11 +270,11 @@
 
                 <!-- ACTION BUTTONS-->
                 <div class="row">
-                    <div class="col">
-                        <a class="btn btn-info float-left" style="color: white;" href="app_data/inputdata.html" target="_blank"><i class="fa fa-database"></i> View Source Data</a>
+                    <div class="col-md-6 col-lg-6 col-sm-12">
+                        <a class="btn btn-info float-left btn-block" style="color: white;" href="app_data/inputdata.html" target="_blank"><i class="fa fa-database"></i> View Source Data</a><br /><br />
                     </div>
-                    <div class="col">
-                        <a id="generateRanking" class="btn btn-success btn-lg float-right" style="color: white!important;" data-toggle="modal" data-target="#modalRanking" href="#"><i class="fa fa-list-ol"></i> Generate Pre-Ranking</a>
+                    <div class="col-md-6 col-lg-6 col-sm-12">
+                        <a id="generateRanking" class="btn btn-success btn-block" style="color: white!important;" data-toggle="modal" data-target="#modalRanking" href="#"><i class="fa fa-list-ol"></i> Generate Pre-Ranking</a>
                     </div>
                 </div>
 

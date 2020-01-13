@@ -99,9 +99,6 @@
                 Other - Travel Awards: 2019 - Summer
             </h1>
 
-            <a class="btn btn-info float-right" href="https://www.researchnet-recherchenet.ca/rnr16/vwOpprtntyDtls.do?prog=3139&view=browseArchive&browseArc=true&progType=CIHR-13&type=EXACT&resultCount=25&sort=program&next=1&all=1" target="_blank" role="button"><i class="fa fa-external-link"></i> View Funding Details</a>
-
-
             <h2 class="text-success"><i class="fa fa-check-circle"></i> Applications Pre-Ranked!
             </h2>
 
@@ -121,7 +118,7 @@
                         <div class="card-body bg-light">
                             <p>
                                 <!-- Program Details Table -->
-                                <table class="table table-striped table-sm">
+                                <table class="table table-responsive table-striped table-sm">
                                     <tr>
                                         <Td width="20%"><b>Funding Organization:</b></Td>
                                         <td width="30%">
@@ -164,6 +161,9 @@
                                     </tr>
 
                                 </table>
+
+                                <a class="btn btn-info btn-sm float-right" href="https://www.researchnet-recherchenet.ca/rnr16/vwOpprtntyDtls.do?prog=3139&view=browseArchive&browseArc=true&progType=CIHR-13&type=EXACT&resultCount=25&sort=program&next=1&all=1" target="_blank" role="button"><i class="fa fa-external-link"></i> View Funding Details</a>
+                                <br /><br />
                             </p>
                         </div>
                     </div>
@@ -175,12 +175,12 @@
 
             <!-- CHARTS -->
             <div class="row">
-                <div class="col-6 text-center">
+                <div class="col-6 text-center col-6 text-center d-none d-sm-none d-md-inline d-lg-inline">
                     <!-- Horizontal Bar Chart -->
                     <h4 class="display-6-heading">Provincial Distribution</h4>
                     <canvas id="horizontalBar" width="442" height="130"></canvas>
                 </div>
-                <div class="col-6 text-center">
+                <div class="col-6 text-center col-6 text-center d-none d-sm-none d-md-inline d-lg-inline">
                     <!-- Doughnut Chart-->
                     <h4 class="display-6-heading">Institute Amounts Comparison</h4>
                     <canvas id="radarChart" width="515" height="257" style="display: block;width: 515px;height: 257px;"></canvas>
@@ -198,7 +198,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-2">
+            <div class="col-md-2 col-lg-2 col-sm-12">
 
                 <!-- Ranked Results Instructions Panel -->
                 <h3>Ranked Results</h3>
@@ -214,11 +214,11 @@
                 </p>
             </div>
 
-            <div class="col-10">
+            <div class="col-md-10 col-lg-10 col-sm-12">
 
                 <!-- Application List Grid -->
                 <h2 class="display-5-heading">High/Low Score Summary</h2>
-                <table class="table table-sm table-striped">
+                <table class="table table-sm table-striped table-responsive">
                     <thead style="background-color: white; border: white;">
                         <tr>
                             <th scope="col" style="color: #006200;">Rank</th>
@@ -291,15 +291,20 @@
                 <!-- Action Buttons -->
 
                 <div class="row">
-                    <div class="col">
-                        <a class="btn btn-primary float-left" href="#"><i class="fa fa-bar-chart"></i> Competition Analytics</a>
+                    <div class="col-lg-3 col-md-3 col-sm-12" style="padding-bottom: 5px;">
+                        <a class="btn btn-primary btn-block" href="#"><i class="fa fa-bar-chart"></i> Competition Analytics</a>
+
                     </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12" style="padding-bottom: 5px;">
+                        <a class="btn btn-primary btn-block" href="#"><i class="fa fa-sort-numeric-asc"></i> Ranking Report</a>
 
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12" style="padding-bottom: 5px;">
+                        <a class="btn btn-primary btn-block" href="#"><i class="fa fa-file-zip-o"></i> Export Package</a>
 
-                    <div class="col text-right">
-                        <a class="btn btn-primary " href="#"><i class="fa fa-sort-numeric-asc"></i> Ranking Report</a>&nbsp;
-                        <a class="btn btn-primary " href="#"><i class="fa fa-file-zip-o"></i> Export Package</a>&nbsp;
-                        <a class="btn btn-success " href="#" data-toggle="modal" data-target="#modalConfirm"><i class="fa fa-upload"></i> Push to EIS</a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12" style="padding-bottom: 5px;">
+                        <a class="btn btn-success btn-block" href="#" data-toggle="modal" data-target="#modalConfirm"><i class="fa fa-upload"></i> Push to EIS</a>
                     </div>
                 </div>
 

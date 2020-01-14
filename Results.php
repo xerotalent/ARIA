@@ -40,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="Step1.html">
+                    <a class="nav-link" href="Step1.php">
                         Home
                         <span class="sr-only">(current)</span></a>
                 </li>
@@ -75,7 +75,7 @@
                                     <li class="list-group-item">
                                         <a href="#" class="card-link"><i class="fa fa-language"></i> Fran&ccedil;ais</a>
                                     </li>
-                                    <li class="list-group-item"><a href="index.html" class="card-link"><i class="fa fa-sign-out"></i> Logout</a></li>
+                                    <li class="list-group-item"><a href="index.php" class="card-link"><i class="fa fa-sign-out"></i> Logout</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -209,7 +209,7 @@
                     <a class="btn btn-secondary btn-block btn-sm" href="#" data-toggle="modal" data-target="#modalCriteria"><i class="fa fa-check-square"></i> Evaluation Criteria</a>
 
 
-                    <a class="btn btn-secondary btn-block btn-sm" style="color: white!important;" href="Step1.html">
+                    <a class="btn btn-secondary btn-block btn-sm" style="color: white!important;" href="Step1.php">
                         <i class="fa fa-undo"></i> Start Again</a>
                 </p>
             </div>
@@ -304,7 +304,7 @@
 
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12" style="padding-bottom: 5px;">
-                        <a class="btn btn-success btn-block" href="#" data-toggle="modal" data-target="#modalConfirm"><i class="fa fa-upload"></i> Push to EIS</a>
+                        <a class="btn btn-success btn-block" href="#" data-toggle="modal" data-target="#modalConfirm"><i class="fa fa-upload"></i> Push to RNet</a>
                     </div>
                 </div>
 
@@ -333,7 +333,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                    <p><u>WARNING:</u> Sending the pre-scores to EIS cannot be undone!</p>
+                    <p><u>WARNING:</u> Sending the pre-scores to RNet cannot be undone!</p>
                     <br />
                     <p>
                         Are you sure you wish to continue?
@@ -345,7 +345,7 @@
                 </div>
                 <div id="panelEISCommands" class="modal-footer">
                     <button type="button" class="btn btn-warning" id="cmdEISCancel" data-dismiss="modal">Cancel</button>&nbsp;
-                    <button type='button' class="btn btn-success" id="cmdEIS"><i class="fa fa-upload"></i> Send Pre-Scores To EIS</button>
+                    <button type='button' class="btn btn-success" id="cmdEIS"><i class="fa fa-upload"></i> Send To RNet</button>
                 </div>
             </div>
         </div>
@@ -802,7 +802,7 @@
                 $('#panelEISCommands').hide();
 
                 setTimeout(function() {
-                    window.location.href = "SentToEIS.html"; //will redirect to next step
+                    window.location.href = "SentToEIS.php"; //will redirect to next step
                 }, 3000); //will call the function after 3 secs.
 
 

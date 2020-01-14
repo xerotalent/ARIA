@@ -40,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="Step1.html">
+                    <a class="nav-link" href="Step1.php">
                         Home
                         <span class="sr-only">(current)</span></a>
                 </li>
@@ -50,8 +50,8 @@
 
             </ul>
             <form class="form-inline my-2 my-lg-0">
-
                 <span style="font-size: 36pt; font-family: 'Bungee Hairline', cursive;">ARIA*&nbsp;&nbsp;</span>
+
                 <ul class="nav justify-content-end">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -75,7 +75,7 @@
                                     <li class="list-group-item">
                                         <a href="#" class="card-link"><i class="fa fa-language"></i> Fran&ccedil;ais</a>
                                     </li>
-                                    <li class="list-group-item"><a href="index.html" class="card-link"><i class="fa fa-sign-out"></i> Logout</a></li>
+                                    <li class="list-group-item"><a href="index.php" class="card-link"><i class="fa fa-sign-out"></i> Logout</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -86,57 +86,125 @@
     </nav>
 
 
-
     <!-- Main Content -->
     <div class="container-fluid">
 
 
         <!-- JUMBOTRON-->
-        <div class="jumbotron" style="padding: 2rem 2rem !important; background-color: white;">
-            <h1 class="display-4">Other - Travel Awards: 2019 - Summer</h1>
-            <br />
-            <div class="text-center">
-                <h2 class="text-success"><i class="fa fa-check-circle"></i> Pre-Scores and Pre-Ranking sent to EIS!</h2>
+        <div class="jumbotron" style="padding: 2rem 2rem !important; background-image: url('images/meeting_bg.png'); height: 435px;">
+            <h1 style="font-size: 48pt; font-family: 'Bungee Hairline', cursive;"><b>Welcome to ARIA*!</b></h1>
+            <p class="lead">
+                ARIA allows CIHR Program Staff to select a grant competition group and pre-rank the applications for Peer Reviewers using Artificial Intelligence.
 
-                <img src="https://digitalsynopsis.com/wp-content/uploads/2015/10/gif-icons-menu-transition-animations-shake-new-mail.gif" class="img-fluid">
-                <p class="lead">
-                    Transaction ID: 3937249
-                </p>
-                <hr />
-                <p>
-                    <a class="btn btn-info float-right" href="Step1.html" role="button"><i class="fa fa-refresh"></i> Choose Another Competition</a>
-                </p>
+                <a class="btn btn-info float-right" href="#" role="button" data-toggle="modal" data-target="#modalLearnMore"><i class="fa fa-lightbulb-o"></i> Learn more</a>
+                <br />
+            </p>
+            <br />
+            <br />
+            <br />
+            <p class="h2 d-none d-md-inline d-lg-inline d-xl-inline" style="font-family: 'Bungee Hairline';">
+                <u>A</u>rtificial<br />
+                <u>R</u>eviewer<br />
+                <u>I</u>ntelligent
+                <br /> <u>A</u>ssistant
+            </p>
+        </div>
+
+
+        <!-- STEP 1 -->
+
+        <div class="row">
+            <div class="col-md-2 col-lg-2 col-sm-12">
+                <h2>Step 1</h2>
+                <br />
+                <p>To begin, select the open Program and Competition to Pre-Rank the applications within that group. The applications that are top ranked will be sent to Peer Reviewers to prioritize the applications they review.</p>
             </div>
 
+            <div class="col-md-10 col-lg-10 col-sm-12">
 
+                <br />
+
+                <form>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="ddProgram">Program</label>
+                            <select class="form-control" id="ddProgram">
+                                    <option>- Select Program - </option>
+                                    <option>Catalyst Grants</option>
+                                    <option>Doctoral Research Awards</option>
+                                    <option>Fellowships</option>
+                                    <option>Operating Grants</option>
+                                    <option>Other</option>
+                                  </select>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="ddCompetition">Competition</label>
+                            <select class="form-control" id="ddCompetition">
+                                    <option>- Select Competition -</option>
+                                    <option>Travel Awards: 2019 - Summer</option>
+                                    <option>Travel Awards: 2019 - Winter</option>
+                                  </select>
+                        </div>
+                    </div>
+                    <br />
+
+                </form>
+
+                <div class="row">
+                    <div class="col-md-10 col-lg-10 col-xl-10 col-sm-12"></div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 col-sm-12">
+                        <a id="nextButton" class="btn btn-primary btn-block float-right" style="color: white!important;" href="#" data-toggle="modal" data-target="#modalLoading">Next >></a>
+                        <br />
+                        <br />
+                    </div>
+                </div>
+
+            </div>
         </div>
 
 
 
 
 
-        <br /><br /><br /><br />
-
         <!-- Modal -->
-        <div class="modal fade alert" role="alert" id="modalConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+        <div class="modal fade" id="modalLearnMore" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
-                    <div class="modal-header alert-warning">
-                        <h5 class="modal-title" id="exampleModalLabel"><i class="fa fa-exclamation-circle" style="font-size: 18pt;"></i> Warning - Are You Sure?</h5>
+                    <div class="modal-header btn-success">
+                        <h5 class="modal-title" id="exampleModalLabel">How ARIA Works</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+            <span aria-hidden="true">&times;</span>
+                </button>
                     </div>
                     <div class="modal-body">
-                        <p><u>WARNING:</u>ul> Sending the pre-scores to EIS cannot be undone!</p>
                         <p>
-                            Are you sure you wish to continue?
+                            Detailed information on how the algorhithm works goes here!
+
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>&nbsp;
-                        <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fa fa-upload"></i> Send Pre-Scores To EIS</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal fade" id="modalLoading" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header btn-success">
+                        <h5 class="modal-title"><i class="fa fa-search" style="font-size: 18pt;"></i> Stand By...</h5>
+                    </div>
+                    <div class="modal-body text-center lead">
+
+                        Hold on a sec while I get those applications for you!
+
+                        <br />
+                        <i class="fa fa-cog fa-3x fa-spin"></i>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -156,6 +224,16 @@
             $('.js-tilt').tilt({
                 scale: 1.1
             })
+
+            $('#nextButton').click(function(e) {
+                e.preventDefault();
+
+                setTimeout(function() {
+                    window.location.href = "Step2.php"; //will redirect to next step
+                }, 3000); //will call the function after 3 secs.
+
+
+            });
         </script>
         <!--===============================================================================================-->
         <script src="js/main.js"></script>
